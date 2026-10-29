@@ -231,7 +231,7 @@ section[id] { scroll-margin-top: 84px; }
 .stage-card__spec { display: grid; gap: 0; border-top: 1px solid var(--line); margin-top: 4px; }
 .stage-card__spec div { display: flex; justify-content: space-between; gap: 14px; padding: 7px 0; border-bottom: 1px solid var(--line-2); font-size: var(--fs-12); letter-spacing: 0.05em; text-transform: uppercase; }
 .stage-card__spec b { color: var(--cream); font-weight: 600; text-align: right; }
-.stage-card__spec span { color: var(--cream-3); }
+.stage-card__spec span { color: var(--cream-2); }
 
 .line__rail { display: flex; align-items: center; gap: 14px; padding-block: clamp(14px, 2vw, 24px) var(--sect); }
 .line__rail ol { display: flex; gap: 8px; list-style: none; margin: 0; padding: 0; flex: 1; }
