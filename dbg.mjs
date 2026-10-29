@@ -1,0 +1,14 @@
+import puppeteer from 'puppeteer-core';
+const b = await puppeteer.launch({ executablePath: '/usr/bin/google-chrome', args: ['--no-sandbox'] });
+const p = await b.newPage();
+await p.setViewport({ width: 1440, height: 900 });
+await p.goto('https://romjjjke.github.io/kozyr-vent/', { waitUntil: 'networkidle2' });
+await p.evaluate(() => document.fonts.ready);
+await new Promise(r => setTimeout(r, 900));
+console.log('start scrollY', await p.evaluate(() => Math.round(window.scrollY)));
+await p.evaluate(() => document.querySelector('#sklad').scrollIntoView());
+await new Promise(r => setTimeout(r, 1200));
+console.log('after scrollIntoView', await p.evaluate(() => ({ y: Math.round(window.scrollY), skladTop: Math.round(document.querySelector('#sklad').getBoundingClientRect().top) })));
+const band = await p.evaluate(() => { const i = document.querySelector('.band__img'); return { src: i.currentSrc.split('/').pop(), nw: i.naturalWidth, nh: i.naturalHeight }; });
+console.log('band', band);
+await b.close();

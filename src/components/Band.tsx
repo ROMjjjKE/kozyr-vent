@@ -4,10 +4,10 @@ export default function Band() {
       <img
         className="band__img"
         src="/kozyr-vent/img/cex-ventilyaciya-640.jpg"
-        srcSet="/kozyr-vent/img/cex-ventilyaciya-640.jpg 640w, /kozyr-vent/img/cex-ventilyaciya.jpg 920w"
+        srcSet="/kozyr-vent/img/cex-ventilyaciya-640.jpg 640w, /kozyr-vent/img/cex-ventilyaciya.jpg 1400w"
         sizes="100vw"
-        width={920}
-        height={621}
+        width={1400}
+        height={945}
         loading="lazy"
         alt="Цех: круглые воздуховоды на подвесах под потолком, вертикальные спуски к оборудованию, рама с ёмкостями"
       />
