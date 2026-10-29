@@ -22,7 +22,7 @@ export default function Stock() {
         <div className="stock reveal" style={{ marginTop: 'clamp(22px, 3vw, 38px)' }}>
           {ITEMS.map(([t, d]) => (
             <article className="stock__item" key={t}>
-              <h4>{t}</h4>
+              <h3>{t}</h3>
               <p>{d}</p>
             </article>
           ))}
